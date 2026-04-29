@@ -1,0 +1,21 @@
+# Deploy the frontend application
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deployment
+  namespace: agritwin-apps
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - name: frontend-container
+        image: frontend-image:latest
+        ports:
+        - containerPort: 8080

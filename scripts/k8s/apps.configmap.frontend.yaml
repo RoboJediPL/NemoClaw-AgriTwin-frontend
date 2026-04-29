@@ -1,0 +1,10 @@
+# Configure the frontend application
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: frontend-config
+  namespace: agritwin-apps
+data:
+  app.properties: |+
+    property1=value1
+    property2=value2

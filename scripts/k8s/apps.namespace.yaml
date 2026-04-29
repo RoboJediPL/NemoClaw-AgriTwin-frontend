@@ -1,0 +1,5 @@
+# Define the agritwin-apps namespace
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: agritwin-apps

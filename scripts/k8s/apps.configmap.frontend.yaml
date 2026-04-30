@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: frontend-config
+  namespace: agritwin-apps
+data:
+  config.json: |-
+    {
+      "debug": true,
+      "apiUrl": "http://api.example.com"
+    }

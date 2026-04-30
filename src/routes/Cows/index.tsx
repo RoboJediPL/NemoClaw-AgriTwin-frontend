@@ -1,13 +1,16 @@
-// Ensure that any changes here are relevant to the implementation of the feed route
-// Example:
-import FeedRoute from '../../components/FeedRoute';
+// Import necessary libraries and components
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import CowsList from '../CowsList';
+import FeedRoute from '../FeedRoute';
 
-const Cows = () => {
+// Define the Cows route component
+const Cows: React.FC = () => {
   return (
-    <div>
-      {/* Existing content */}
-      <FeedRoute />
-    </div>
+    <Routes>
+      <Route path='/cows' element={<CowsList />} />
+      <Route path='/feed-route' element={<FeedRoute />} />
+    </Routes>
   );
 };
 

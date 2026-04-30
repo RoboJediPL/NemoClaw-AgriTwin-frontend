@@ -1,0 +1,4 @@
+// Ignore node_modules and build output
+dist
+node_modules
+build

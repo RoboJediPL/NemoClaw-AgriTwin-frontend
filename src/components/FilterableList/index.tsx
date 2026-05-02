@@ -1,17 +1,23 @@
-// src/components/FilterableList/index.tsx
+// Implementation of the filterable list component
 import React from 'react';
+import TextField from '@mui/material/TextField';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
 
-interface FilterableListProps {
-  items: string[];
-}
+const FilterableList: React.FC = () => {
+  const [filter, setFilter] = React.useState('');
 
-const FilterableList: React.FC<FilterableListProps> = ({ items }) => {
+  const filteredItems = // Logic to filter items based on the filter state;
+
   return (
-    <ul>
-      {items.map((item, index) => (
-        <li key={index}>{item}</li>
-      ))}
-    </ul>
+    <div>
+      <TextField onChange={(e) => setFilter(e.target.value)} label="Filter" variant="outlined" />
+      <List>
+        {filteredItems.map(item => (
+          <ListItem key={item.id}>{item.name}</ListItem>
+        ))}
+      </List>
+    </div>
   );
 };
 

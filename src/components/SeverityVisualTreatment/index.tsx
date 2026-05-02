@@ -1,14 +1,16 @@
-// src/components/SeverityVisualTreatment/index.tsx
+// Implementation of severity-based visual treatment component
 import React from 'react';
+import { Chip } from '@mui/material';
 
-interface SeverityVisualTreatmentProps {
-  severity: string;
-  message: string;
-}
+const SeverityVisualTreatment: React.FC = () => {
+  const items = // Logic to retrieve items with severity;
 
-const SeverityVisualTreatment: React.FC<SeverityVisualTreatmentProps> = ({ severity, message }) => {
   return (
-    <div className={`severity-${severity.toLowerCase()}`}>{message}</div>
+    <div>
+      {items.map(item => (
+        <Chip label={item.severity} color={item.severityColor} />
+      ))}
+    </div>
   );
 };
 

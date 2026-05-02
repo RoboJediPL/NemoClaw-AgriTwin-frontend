@@ -1,17 +1,8 @@
-// Implementation of severity-based visual treatment component
+// TODO: Implement severity-based visual treatment for the Alerts route
 import React from 'react';
-import { Chip } from '@mui/material';
 
-const SeverityVisualTreatment: React.FC = () => {
-  const items = // Logic to retrieve items with severity;
-
-  return (
-    <div>
-      {items.map(item => (
-        <Chip label={item.severity} color={item.severityColor} />
-      ))}
-    </div>
-  );
+const SeverityVisualTreatment = ({ severity }) => {
+  return <div>Severity: {severity}</div>;
 };
 
 export default SeverityVisualTreatment;

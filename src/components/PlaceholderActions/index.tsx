@@ -1,13 +1,8 @@
-// Implementation of placeholder actions component
+// TODO: Implement placeholder actions for the Alerts route
 import React from 'react';
-import Button from '@mui/material/Button';
 
-const PlaceholderActions: React.FC = () => {
-  return (
-    <div>
-      <Button variant="contained" color="primary">Action</Button>
-    </div>
-  );
+const PlaceholderActions = () => {
+  return <div>Placeholder Actions</div>;
 };
 
 export default PlaceholderActions;

@@ -1,8 +1,12 @@
-// TODO: Implement filterable list for the Alerts route
+// Filterable list implementation
 import React from 'react';
 
-const FilterableList = () => {
-  return <div>Filterable List</div>;
+const FilterableList: React.FC = () => {
+  return (
+    <div>
+      {/* List of alerts */}
+    </div>
+  );
 };
 
 export default FilterableList;

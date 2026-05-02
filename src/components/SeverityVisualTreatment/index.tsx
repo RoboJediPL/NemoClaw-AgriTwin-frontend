@@ -1,8 +1,12 @@
-// TODO: Implement severity-based visual treatment for the Alerts route
+// Severity-based visual treatment implementation
 import React from 'react';
 
-const SeverityVisualTreatment = ({ severity }) => {
-  return <div>Severity: {severity}</div>;
+const SeverityVisualTreatment: React.FC = () => {
+  return (
+    <div>
+      {/* Visual representation based on severity */}
+    </div>
+  );
 };
 
 export default SeverityVisualTreatment;

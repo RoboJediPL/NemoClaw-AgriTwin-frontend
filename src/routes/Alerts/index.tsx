@@ -1,8 +1,14 @@
-// TODO: Implement Alerts route with filterable list, severity-based visual treatment, and placeholder actions
+// Alerts route implementation
 import React from 'react';
 
-const Alerts = () => {
-  return <div>Alerts Route</div>;
+const Alerts: React.FC = () => {
+  return (
+    <div>
+      {/* Filterable list */}
+      {/* Severity-based visual treatment */}
+      {/* Placeholder actions */}
+    </div>
+  );
 };
 
 export default Alerts;

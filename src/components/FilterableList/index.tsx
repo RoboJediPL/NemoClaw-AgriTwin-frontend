@@ -1,19 +1,17 @@
 // src/components/FilterableList/index.tsx
 import React from 'react';
-import { List, ListItem } from '@mui/material';
 
 interface FilterableListProps {
-  items: any[];
-  renderItem: (item: any) => JSX.Element;
+  items: string[];
 }
 
-const FilterableList = ({ items, renderItem }: FilterableListProps) => {
+const FilterableList: React.FC<FilterableListProps> = ({ items }) => {
   return (
-    <List>
+    <ul>
       {items.map((item, index) => (
-        <ListItem key={index}>{renderItem(item)}</ListItem>
+        <li key={index}>{item}</li>
       ))}
-    </List>
+    </ul>
   );
 };
 

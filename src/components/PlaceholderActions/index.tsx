@@ -1,14 +1,17 @@
 // src/components/PlaceholderActions/index.tsx
 import React from 'react';
-import { Button } from '@mui/material';
 
 interface PlaceholderActionsProps {
   actions: string[];
 }
 
-const PlaceholderActions = ({ actions }: PlaceholderActionsProps) => {
+const PlaceholderActions: React.FC<PlaceholderActionsProps> = ({ actions }) => {
   return (
-    <Button variant="contained" disabled>Placeholder Actions</Button>
+    <div>
+      {actions.map((action, index) => (
+        <button key={index}>{action}</button>
+      ))}
+    </div>
   );
 };
 

@@ -1,8 +1,8 @@
-// src/routes/Alerts/index.tsx
+// Implementation of Alerts route
 import React from 'react';
-import FilterableList from '../components/FilterableList';
-import SeverityVisualTreatment from '../components/SeverityVisualTreatment';
-import PlaceholderActions from '../components/PlaceholderActions';
+import FilterableList from '../../components/FilterableList';
+import SeverityVisualTreatment from '../../components/SeverityVisualTreatment';
+import PlaceholderActions from '../../components/PlaceholderActions';
 
 const Alerts: React.FC = () => {
   return (

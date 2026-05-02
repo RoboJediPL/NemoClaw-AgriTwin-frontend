@@ -1,12 +1,14 @@
-// Implementation of Placeholder Actions component
+// src/components/PlaceholderActions/index.tsx
 import React from 'react';
+import { Button } from '@mui/material';
 
-const PlaceholderActions: React.FC = () => {
+interface PlaceholderActionsProps {
+  actions: string[];
+}
+
+const PlaceholderActions = ({ actions }: PlaceholderActionsProps) => {
   return (
-    <div>
-      <button>Placeholder Action 1</button>
-      <button>Placeholder Action 2</button>
-    </div>
+    <Button variant="contained" disabled>Placeholder Actions</Button>
   );
 };
 

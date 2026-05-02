@@ -1,26 +1,19 @@
-// Implementation of Filterable List component
-import React, { useState } from 'react';
+// src/components/FilterableList/index.tsx
+import React from 'react';
+import { List, ListItem } from '@mui/material';
 
-const FilterableList: React.FC = () => {
-  const [filter, setFilter] = useState('');
+interface FilterableListProps {
+  items: any[];
+  renderItem: (item: any) => JSX.Element;
+}
 
-  const items = [
-    { id: 1, name: 'Item 1', severity: 'High' },
-    { id: 2, name: 'Item 2', severity: 'Medium' },
-    { id: 3, name: 'Item 3', severity: 'Low' }
-  ];
-
-  const filteredItems = items.filter(item => item.name.toLowerCase().includes(filter.toLowerCase()));
-
+const FilterableList = ({ items, renderItem }: FilterableListProps) => {
   return (
-    <div>
-      <input type='text' value={filter} onChange={e => setFilter(e.target.value)} placeholder='Filter...' />
-      <ul>
-        {filteredItems.map(item => (
-          <li key={item.id}>{item.name}</li>
-        ))}
-      </ul>
-    </div>
+    <List>
+      {items.map((item, index) => (
+        <ListItem key={index}>{renderItem(item)}</ListItem>
+      ))}
+    </List>
   );
 };
 

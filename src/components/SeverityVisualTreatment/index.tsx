@@ -1,13 +1,8 @@
-// src/components/SeverityVisualTreatment/index.tsx
+// Implementation of SeverityVisualTreatment component
 import React from 'react';
 
 const SeverityVisualTreatment: React.FC = () => {
-  return (
-    <div>
-      <h2>Severity-Based Visual Treatment</h2>
-      {/* Add severity-based visual treatment implementation here */}
-    </div>
-  );
+  return <div>Severity Visual Treatment</div>;
 };
 
 export default SeverityVisualTreatment;

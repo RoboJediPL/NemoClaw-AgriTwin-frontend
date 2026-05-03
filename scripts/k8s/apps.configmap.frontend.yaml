@@ -4,4 +4,4 @@ metadata:
   name: frontend-config
   namespace: agritwin-apps
 data:
-  internalArtifactOnly: "true"
+  VITE_APP_URL: http://example.com

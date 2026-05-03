@@ -14,13 +14,10 @@ spec:
         app: frontend
     spec:
       containers:
-      - name: frontend-container
-        image: agritwin/frontend:latest
+      - name: frontend
+        image: agritwin/frontend:v1
         ports:
         - containerPort: 3000
-        env:
-        - name: INTERNAL_ARTIFACT_ONLY
-          valueFrom:
-            configMapKeyRef:
-              name: frontend-config
-              key: internalArtifactOnly
+        envFrom:
+        - configMapRef:
+            name: frontend-config

@@ -4,4 +4,4 @@ metadata:
   name: frontend-config
   namespace: agritwin-apps
 data:
-  VITE_APP_URL: http://example.com
+  VITE_API_URL: "http://backend-service:3000"

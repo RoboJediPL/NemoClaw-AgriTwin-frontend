@@ -1,1 +1,1 @@
-// Your content here
+// Placeholder content for Cows route component

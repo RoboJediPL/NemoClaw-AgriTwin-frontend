@@ -4,4 +4,7 @@ metadata:
   name: frontend-config
   namespace: agritwin-apps
 data:
-  REACT_APP_API_URL: "http://backend-service/agritwin-api"
+  config.json: |
+    {
+      "key": "value"
+    }

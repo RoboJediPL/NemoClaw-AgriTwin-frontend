@@ -14,10 +14,8 @@ spec:
         app: frontend
     spec:
       containers:
-      - name: frontend
-        image: frontend-image:latest
+      - name: frontend-container
+        image: agritwin/frontend:v1.0
         ports:
         - containerPort: 3000
-        envFrom:
-        - configMapRef:
-            name: frontend-config
+          protocol: TCP

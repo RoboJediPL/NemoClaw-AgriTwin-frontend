@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: agritwin-frontend-config
+  name: frontend-config
   namespace: agritwin-apps
 data:
-  VITE_API_URL: "http://backend-service:3000"
+  VITE_APP_API_URL: "http://backend-service"

@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: frontend-deployment
+  name: agritwin-frontend-deployment
   namespace: agritwin-apps
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: frontend
+      app: agritwin-frontend
   template:
     metadata:
       labels:
-        app: frontend
+        app: agritwin-frontend
     spec:
       containers:
-      - name: frontend
-        image: agritwin/frontend:latest
-        ports:
-        - containerPort: 8080
-        envFrom:
-        - configMapRef:
-            name: frontend-config
+        - name: agritwin-frontend
+          image: agritwin/fe:v1.0
+          ports:
+            - containerPort: 3000
+          envFrom:
+            - configMapRef:
+                name: agritwin-frontend-config

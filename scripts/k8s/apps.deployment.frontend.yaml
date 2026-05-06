@@ -14,10 +14,10 @@ spec:
         app: frontend
     spec:
       containers:
-        - name: frontend
-          image: agritwin/frontend:latest
-          ports:
-            - containerPort: 3000
-          envFrom:
-            - configMapRef:
-                name: frontend-config
+      - name: frontend
+        image: frontend-image:latest
+        ports:
+        - containerPort: 3000
+        envFrom:
+        - configMapRef:
+            name: frontend-config

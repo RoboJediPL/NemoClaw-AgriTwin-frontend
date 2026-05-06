@@ -4,4 +4,4 @@ metadata:
   name: frontend-config
   namespace: agritwin-apps
 data:
-  VITE_APP_API_URL: "http://backend-service"
+  REACT_APP_API_URL: "http://backend-service/agritwin-api"
